@@ -1,0 +1,40 @@
+{
+    "name": "GistFlow",
+    "version": "0.1.0",
+    "description": "Gist Flow is a web page summarizing tool for easier creation of notes and summaries.",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.google.com/*"
+            ],
+            "js": [
+                "scripts/content/content.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/save.svg",
+                "assets/edit.svg",
+                "assets/delete.svg"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "action": {
+        "default_title": "GistFlow",
+        "default_popup": "popup/popup.html"
+    },
+    "manifest_version": 3
+}
