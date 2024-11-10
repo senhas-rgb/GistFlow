@@ -14,6 +14,7 @@ function save() {
 
 function dashboard() {
     console.log("Dashboard button clicked");
+    chrome.tabs.create({url: "popup/dashboard.html"});
 }
 
 zapButton.addEventListener("click", zap);
