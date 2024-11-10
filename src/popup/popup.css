@@ -1,9 +1,21 @@
-body {
+.container {
     width: 600px;
     height: 500px;
     background-color: rgb( 203, 157, 240);
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes fontChange {
+    0% {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    50% {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    100% {
+        font-family: 'Courier New', Courier, monospace;
+    }
 }
 
 @keyframes rgb {
@@ -25,6 +37,7 @@ body {
     text-align: center;
     font-size: 30px;
     margin-top: 50px;
+    animation: fontChange 3s ease-in-out infinite;
 }
 
 button {
@@ -62,4 +75,106 @@ button:not(:hover):not(:focus):not(:active) {
 
 #zap {
     animation: rgb 3s ease-in-out infinite;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    border: 3px;
+    border-radius: 50%;
+}
+
+#recentFiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+body {
+    background-color: rgb(203, 157, 240);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img:hover {
+    transform: rotate3d(1, 4, 2, 40deg);
+    transition: 3s;
+}
+
+img:not(:hover) {
+    transition: 3s;
+}
+
+#search {
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(255, 249, 191);
+    font-size: 20px;
+}
+
+#search:focus {
+    outline: none;
+}
+
+.file {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.file img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.file p {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.file button {
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: rgb(255, 249, 191);
+    color: black;
+    border: 1px solid rgb(255, 249, 191);
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.file button:hover {
+    background-color: purple;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.file button:focus {
+    outline: none;
+    transition: 1s;
+}
+
+.file button:active {
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.file button:not(:hover):not(:focus):not(:active) {
+    transition: 1s;
+    background-color: rgb(240, 193, 225);
+    color: black;
+}
+
+.file img {
+    border-radius: 0px;
 }
