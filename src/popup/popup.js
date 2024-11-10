@@ -4,14 +4,19 @@ const zapButton = document.querySelector("button#zap");
 const saveButton = document.querySelector("button#save");
 const dashboardButton = document.querySelector("button#dashboard");
 
-zapButton.addEventListener("click", () => {
+function zap() {
     console.log("Zap button clicked");
-});
+}
 
-saveButton.addEventListener("click", () => {
+function save() {
     console.log("Save button clicked");
-});
+}
 
-dashboardButton.addEventListener("click", () => {
+function dashboard() {
     console.log("Dashboard button clicked");
-});
+}
+
+zapButton.addEventListener("click", zap);
+saveButton.addEventListener("click", save);
+dashboardButton.addEventListener("click", dashboard);
+
