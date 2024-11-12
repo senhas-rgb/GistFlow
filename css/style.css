@@ -222,3 +222,13 @@ footer p:not(:hover) {
 .navBar button:not(:hover) {
   transition: all 1s ease-in-out;
 }
+
+:root([data-theme="dark"]) {
+  --dark-color: #000;
+  --light-color: #FFF;
+}
+
+:root([data-theme="light"]) {
+  --dark-color: #FFF;
+  --light-color: #000;
+}
