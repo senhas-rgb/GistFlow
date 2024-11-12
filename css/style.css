@@ -105,7 +105,12 @@ footer p {
   margin: 10px;
   border-radius: 10px;
   background-color: #CDC1FF;
-  filter: drop-shadow(3px 3px 3px #4444dd);
+  filter: drop-shadow(0 0 0.25rem #4444dd);;
+}
+
+.file:hover {
+  filter: none;
+  transition: 300ms;
 }
 
 .file h2 {
