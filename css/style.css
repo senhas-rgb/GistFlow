@@ -202,3 +202,23 @@ footer p:not(:hover) {
 .Visible {
   visibility: visible;
 }
+
+.navBar button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.navBar button:hover {
+  background-color: white;
+  color: black;
+  transition: all 1s ease-in-out;
+}
+
+.navBar button:not(:hover) {
+  transition: all 1s ease-in-out;
+}
