@@ -30,6 +30,7 @@ h1 {
 #logo {
   border-radius: 50%;
   height: 60px;
+  filter: drop-shadow(2px 2px 2px black);
 }
 
 .file-images:hover {
@@ -180,11 +181,13 @@ footer p {
   color: white;
   cursor: pointer;
   transition: 300ms;
+  filter: drop-shadow(3px 3px 3px #4444dd);
 }
 
 .dialog button:hover {
   background-color: white;
   color: black;
+  filter: none;
 }
 
 .Visible {
@@ -200,11 +203,14 @@ footer p {
   color: white;
   cursor: pointer;
   transition: 300ms;
+  filter: drop-shadow(3px 3px 3px #4444dd);
+  margin: 0 10px;
 }
 
 .navBar button:hover {
   background-color: white;
   color: black;
+  filter: none;
 }
 
 .nav-list {
