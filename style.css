@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 3px;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 20px;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 15px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 15px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+#logo {
+    border-radius: 50%;
+}
+
+img:hover {
+    transform: rotate3d(4, 0, 1, 20deg);
+    transition: all 1s ease-in-out;
+}
+
+img:not(:hover) {
+    transform: rotate3d(4, 0, 1, 0deg);
+    transition: all 1s ease-in-out;
+}
+
+.navBar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.navBar p {
+  margin: 0 10px;
+}
+
+.navBar p:hover {
+  color: violet;
+    transition: all 0.2s ease-in-out;
+}
+
+.navBar p:not(:hover) {
+    transition: all 0.2s ease-in-out;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  color: white;
+  background-color: #000;
+}
+
+footer p {
+  margin: 10px;
+  color: antiquewhite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+    letter-spacing: 1px;
+}
+
+footer p:hover {
+    color: violet;
+    transition: all 1s ease-in-out;
+}
+
+footer p:not(:hover) {
+    transition: all 1s ease-in-out;
+}
+
+.FileDetails {
+  display: flex;
+  flex-direction: row;
+}
+
+.file {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.file h2 {
+  font-size: 20px;
+}
+
+.file p {
+  font-size: 15px;
+}
+
+.file button {
+  font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.file button:hover {
+    background-color: white;
+    color: black;
+    transition: all 1s ease-in-out;
+}
+
+.file button:not(:hover) {
+    transition: all 1s ease-in-out;
+}
