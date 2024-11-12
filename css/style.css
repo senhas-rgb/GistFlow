@@ -6,6 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #FFF6E3;
 }
 
 p {
@@ -75,27 +76,16 @@ footer {
   bottom: 0;
   width: 100%;
   height: 60px;
-  color: white;
-  background-color: #000;
+  color: black;
 }
 
 footer p {
-  margin: 10px;
-  color: antiquewhite;
+  margin: 15px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   text-decoration: none;
   letter-spacing: 1px;
-}
-
-footer p:hover {
-  color: violet;
-  transition: all 1s ease-in-out;
-}
-
-footer p:not(:hover) {
-  transition: all 1s ease-in-out;
 }
 
 .FileDetails {
@@ -112,9 +102,9 @@ footer p:not(:hover) {
   align-items: center;
   width: 200px;
   height: 300px;
-  border: 1px solid black;
   margin: 10px;
   border-radius: 10px;
+  background-color: #CDC1FF;
 }
 
 .file h2 {
