@@ -1,23 +1,24 @@
 * {
   margin: 0;
   padding: 3px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
   font-size: 20px;
   color: #000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0 15px;
 }
 
 h2 {
   font-size: 20px;
   color: #000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0 15px;
 }
 
@@ -27,17 +28,17 @@ img {
 }
 
 #logo {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 img:hover {
-    transform: rotate3d(4, 0, 1, 20deg);
-    transition: all 1s ease-in-out;
+  transform: rotate3d(4, 0, 1, 20deg);
+  transition: all 1s ease-in-out;
 }
 
 img:not(:hover) {
-    transform: rotate3d(4, 0, 1, 0deg);
-    transition: all 1s ease-in-out;
+  transform: rotate3d(4, 0, 1, 0deg);
+  transition: all 1s ease-in-out;
 }
 
 .navBar {
@@ -54,11 +55,11 @@ img:not(:hover) {
 
 .navBar p:hover {
   color: violet;
-    transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .navBar p:not(:hover) {
-    transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .center {
@@ -68,7 +69,6 @@ img:not(:hover) {
   display: flex;
   flex-direction: column;
 }
-
 
 footer {
   position: fixed;
@@ -83,20 +83,20 @@ footer {
 footer p {
   margin: 10px;
   color: antiquewhite;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   text-align: center;
   text-decoration: none;
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 footer p:hover {
-    color: violet;
-    transition: all 1s ease-in-out;
+  color: violet;
+  transition: all 1s ease-in-out;
 }
 
 footer p:not(:hover) {
-    transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .FileDetails {
@@ -126,20 +126,77 @@ footer p:not(:hover) {
 
 .file button {
   font-size: 15px;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    background-color: black;
-    color: white;
-    cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 .file button:hover {
-    background-color: white;
-    color: black;
-    transition: all 1s ease-in-out;
+  background-color: white;
+  color: black;
+  transition: all 1s ease-in-out;
 }
 
 .file button:not(:hover) {
-    transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+
+.dialog {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  visibility: visible;
+}
+
+.dialog h2 {
+  font-size: 30px;
+}
+
+.dialog p {
+  font-size: 20px;
+}
+
+.dialog button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.dialog button:hover {
+  background-color: white;
+  color: black;
+  transition: all 1s ease-in-out;
+}
+
+.dialog button:not(:hover) {
+  transition: all 1s ease-in-out;
+}
+
+.Visible {
+  visibility: visible;
 }
