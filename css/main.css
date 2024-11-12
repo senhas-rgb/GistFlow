@@ -27,12 +27,19 @@ body {
   padding: 7px;
   background-color: #CDC1FF;
   border-radius:8px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.nav-img:hover {
+  transform: scale(1.2);
 }
 
 .nav-list {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 43px;
 
   background-color: #CDC1FF;
   border-radius:8px;
@@ -44,6 +51,8 @@ p {
   color: #000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0 15px;
+  cursor: pointer;
+  z-index: 5;
 }
 
 .switch {
@@ -103,4 +112,15 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.selector {
+  width: 81.5px;
+  height: 43px;
+  border-radius: 8px;
+  background-color: #9990bd9a;
+  position: relative;
+  left: 118px;
+  bottom: 36px;
+  z-index: 1;
 }
