@@ -1,9 +1,9 @@
-const zapBtns = document.querySelectorAll(".zap-btn");
+const navBtns = document.querySelectorAll(".nav-btn");
 const textInterface = document.querySelector(".text");
 const videoInterface = document.querySelector(".video");
 const audioInterface = document.querySelector(".audio");
 
-for (let button of zapBtns) {
+for (let button of navBtns) {
     button.addEventListener("click", ()=>{
         if (button.classList.contains("text-sect")) {
             textInterface.style.display = "block";
