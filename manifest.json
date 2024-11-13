@@ -2,7 +2,10 @@
     "manifest_version": 3,
     "name": "GistFlow",
     "version": "1.0",
-    "description": "TypeScript migration",
+    "description": "A page summarisation tool using chrome built in AI",
+    "icons": {
+      "16": "public/images/icon.jpg"
+    },
     "action": {
       "default_popup": "index.html"
     },
