@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;  
 }
 
 .popup {
@@ -123,4 +123,17 @@ input:checked + .slider:before {
   left: 118px;
   bottom: 36px;
   z-index: 1;
+}
+
+.audio, .video {
+  display: none;
+}
+
+.vid-container {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  height: 200px;
+
+  border-radius: 10px;
 }
