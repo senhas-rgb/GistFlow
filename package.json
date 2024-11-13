@@ -1,0 +1,11 @@
+{
+  "name": "gistflow",
+  "version": "1.0.0",
+  "description": "![GitHub repo size](https://img.shields.io/github/repo-size/senhas-rgb/gistflow)\r ![GitHub last commit](https://img.shields.io/github/last-commit/senhas-rgb/gistflow)\r ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/senhas-rgb/gistflow/master)\r ![GitHub contributors](https://img.shields.io/github/contributors/senhas-rgb/gistflow)\r ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/senhas-rgb/gistflow)\r ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/senhas-rgb/gistflow)\r ![GitHub License](https://img.shields.io/github/license/senhas-rgb/gistflow)\r ![GitHub forks](https://img.shields.io/github/forks/senhas-rgb/gistflow)\r ![GitHub Repo stars](https://img.shields.io/github/stars/senhas-rgb/gistflow)\r ![GitHub Release](https://img.shields.io/github/v/release/senhas-rgb/gistflow)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
