@@ -30,6 +30,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding-top: 20px;
+  position: relative;
 }
 
 .nav-img {
