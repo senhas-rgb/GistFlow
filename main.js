@@ -15,3 +15,6 @@ function changeTheme() {
 // adding the event listeners
 DashboardButton.addEventListener("click", openNewTabDashboard);
 darkMode.addEventListener("click", changeTheme);
+
+const API = process.env.API;
+console.log(API);
