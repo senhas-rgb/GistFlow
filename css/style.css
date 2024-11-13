@@ -238,3 +238,8 @@ footer p {
   --dark-color: #FFF;
   --light-color: #000;
 }
+
+a {
+  text-decoration: none;
+  color: purple;
+}
