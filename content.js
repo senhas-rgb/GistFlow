@@ -38,6 +38,7 @@ function ScrapeText() {
     }).then ((results) => {
         const paragraphText = results[0].result;
         console.log(paragraphText);
+        console.log(paragraphText.length);
     });
 }
 
