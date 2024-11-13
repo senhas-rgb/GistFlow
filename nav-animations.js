@@ -1,44 +1,43 @@
 const slider = document.querySelector(".selector");
 const buttons = document.querySelectorAll("P");
-let sliderOffset = slider.offsetLeft;
-let offset;
+
 let id;
-
-for (let button of buttons) {
+function slideToVideo() {
+    let pos = 160;
     clearInterval(id);
-    button.addEventListener("click", ()=>{
-        if (button.innerHTML == "Text") {
-            offset = button.offsetLeft - 23;
-            slider.style.left = `${offset}px`;
-        } else if (button.innerHTML == "Video") {
-            offset = button.offsetLeft -15;
-            slider.style.left = `${offset}px`;
-        } else if (button.innerHTML == "Audio") {
-            offset = button.offsetLeft - 8;
-            slider.style.left = `${offset}px`;
-        }
-        animateSlider();
-    })
-}
-
-function frame(offset) {
-    if (offset == sliderOffset) {
-        clearInterval(id);
-      } else {
-        while (sliderOffset != offset){
-            if (offset > sliderOffset) {
-                sliderOffset++;
-                slider.style.left = sliderOffset + "px"
-            } else if (offset < sliderOffset) {
-                sliderOffset--;
-                slider.style.left = sliderOffset + "px"
-            }
+    id = setInterval(frame, 0.00000001);
+    function frame() {
+        if (pos == 240) {
+            clearInterval(id);
+        } else {
+            pos++;
+            slider.style.left = pos + 'px';
         }
     }
 }
 
-function animateSlider() {
-    id = setInterval(()=>{
-        frame(sliderOffset);
-    }, 100);
+function slideToText() {
+    let pos = 240;
+    clearInterval(id);
+    id = setInterval(frame, 0.00000001);
+    function frame() {
+        if (pos == 160) {
+            clearInterval(id);
+        } else {
+            pos--;
+            slider.style.left = pos + 'px';
+        }
+    }
+}
+
+for (let button of buttons) {
+    button.addEventListener("click", ()=>{
+        if (button.innerHTML == "Text ") {
+            if (slider.offsetLeft == 240)
+                slideToText();
+        } else if (button.innerHTML == "Video") {
+            if (slider.offsetLeft == 160)
+                slideToVideo();
+        }
+    })
 }

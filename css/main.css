@@ -27,7 +27,7 @@ body {
   width: 100%;
   height: 50px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding-top: 20px;
   position: relative;
@@ -51,6 +51,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 43px;
+  max-width: 160px;
 
   background-color: #CDC1FF;
   border-radius:8px;
@@ -126,17 +127,19 @@ input:checked + .slider:before {
 }
 
 .selector {
-  width: 81.5px;
+  width: 80px;
   height: 43px;
   border-radius: 8px;
   background-color: #9990bd9a;
   position: relative;
-  left: 118px;
+  left: 160px;
   bottom: 36px;
   z-index: 1;
+
+  animation-duration: 300ms;
 }
 
-.audio, .video {
+.video {
   display: none;
 }
 
