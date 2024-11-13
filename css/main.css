@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box; }
 
+@keyframes rgb-drop-shadow {
+  0% {
+    filter: drop-shadow(0px 0px 50px #e97587);
+  }
+  100% {
+    filter: drop-shadow(0px 0px 10px #e97587);
+  }
+  
+}
+
 body {
   font-family: 'Roboto', sans-serif;  
 }
@@ -149,8 +159,12 @@ input:checked + .slider:before {
   cursor: pointer;
   transition: 300ms;
   font-size: 20px;
+  animation: rgb-drop-shadow 1s infinite alternate;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
 .zap-btn:hover {
   background-color: white;
+  filter: none;
 }
