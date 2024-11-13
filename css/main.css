@@ -148,6 +148,7 @@ input:checked + .slider:before {
   background-color: #FFB2BD;
   cursor: pointer;
   transition: 300ms;
+  font-size: 20px;
 }
 
 .zap-btn:hover {
