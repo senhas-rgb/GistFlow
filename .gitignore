@@ -1,3 +1,4 @@
 # Ignore node_modules folder and dist output
 node_modules/
 dist/
+.env
