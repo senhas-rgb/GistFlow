@@ -2,7 +2,6 @@
 const DashboardButton = document.getElementById("DashboardButton");
 const body = document.querySelector("body");
 const darkMode = document.getElementById("darkMode");
-const API = process.env.API;
 
 
 // defining all the functions
@@ -17,4 +16,6 @@ function changeTheme() {
 // adding the event listeners
 DashboardButton.addEventListener("click", openNewTabDashboard);
 darkMode.addEventListener("click", changeTheme);
+
+const API = process.env.API;
 console.log(API);
