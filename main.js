@@ -13,6 +13,8 @@ function changeTheme() {
   body.dataset.theme = body.dataset.theme === "dark" ? "light" : "dark";
 }
 
+
+
 // adding the event listeners
 DashboardButton.addEventListener("click", openNewTabDashboard);
 darkMode.addEventListener("click", changeTheme);

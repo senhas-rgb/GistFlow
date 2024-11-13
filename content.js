@@ -42,21 +42,16 @@ function ScrapeText() {
 
         return chrome.scripting.executeScript({
             target: { tabId: activeTabId },
-            injectImmediately: true,
-            func: DOMtoString,
-            args: ['div']
+            func: DOMtoText
         });
     }).then ((results) => {
-        console.log(results[0].result)
-    })
+        const paragraphText = results[0].result;
+        console.log(paragraphText);
+    });
 }
 
-function DOMtoString(selector) {
-    if (selector) {
-        selector = document.querySelector(selector);
-        if (!selector) return "ERROR: querySelector failed to find node"
-    } else {
-        selector = document.documentElement;
-    }
-    return selector.outerHTML;
+function DOMtoText() {
+    const paragraphs = Array.from(document.querySelectorAll("p"));
+    const paragraphsText = paragraphs.map((paragraph) => paragraph.textContent.trim());
+    return paragraphsText.filter(text => text.length > 20);
 }
