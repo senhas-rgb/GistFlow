@@ -17,6 +17,7 @@ for (let button of buttons) {
             offset = button.offsetLeft - 8;
             slider.style.left = `${offset}px`;
         }
+        animateSlider();
     })
 }
 
@@ -34,4 +35,10 @@ function frame(offset) {
             }
         }
     }
+}
+
+function animateSlider() {
+    id = setInterval(()=>{
+        frame(sliderOffset);
+    }, 100);
 }
