@@ -136,3 +136,23 @@ input:checked + .slider:before {
   height: 200px;
   border-radius: 10px;
 }
+
+.zap-btn {
+  display: block;
+  width: 100px;
+  height: 40px;
+  margin: 30px auto;
+
+  border: 3px solid #FFB2BD;
+  border-radius: 7px;
+  outline: none;
+
+  background-color: #FFB2BD;
+  cursor: pointer;
+
+  transition: 300ms;
+}
+
+.zap-btn:hover {
+  background-color: white;
+}
