@@ -142,14 +142,11 @@ input:checked + .slider:before {
   width: 100px;
   height: 40px;
   margin: 30px auto;
-
   border: 3px solid #FFB2BD;
   border-radius: 7px;
   outline: none;
-
   background-color: #FFB2BD;
   cursor: pointer;
-
   transition: 300ms;
 }
 
