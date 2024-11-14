@@ -245,7 +245,7 @@ a {
   color: rgb(85, 65, 85);
 }
 
-#file-name {
+.file-name {
   text-align: center;
   width: 100px;
   background-color: transparent;
@@ -255,8 +255,14 @@ a {
   font-weight: 600;
 }
 
-#file-name::placeholder {
+.file-name::placeholder {
   color: black;
+}
+
+.file-name-edit {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .title-holder {
@@ -271,6 +277,7 @@ a {
   padding: 0;
   transition: 300ms;
   cursor: pointer;
+  margin-left: 5px;
 }
 
 .title-edit-btn:hover {
