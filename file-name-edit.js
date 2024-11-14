@@ -19,6 +19,7 @@ for (let input of inputFields) {
             if (event.key === 'Enter') {
                 input.setAttribute("disabled", "true");
                 input.classList.remove("file-name-edit")
+                input.setAttribute("title", input.value)
             }
         }
     })
