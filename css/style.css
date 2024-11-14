@@ -4,17 +4,31 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #E5D9F2;
+  --secondary-color: #CDC1FF;
+  --drop-shadow: #4444dd;
+  --text-color: rgb(85, 65, 85);
+}
+
+.dark-theme {
+  --primary-color: #433D8B;
+  --secondary-color: #2E236C;
+  --drop-shadow: black;
+  --text-color: black;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: thin;
-  scrollbar-color: #000 #E5D9F2;
+  scrollbar-color: #000 var(--primary-color);
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #E5D9F2;
+  background-color: var(--primary-color);
 }
 
 p {
@@ -122,8 +136,8 @@ footer p {
   max-height: 300px;
   margin: 10px;
   border-radius: 10px;
-  background-color: #CDC1FF;
-  filter: drop-shadow(0 0 0.25rem #4444dd);;
+  background-color: var(--secondary-color);
+  filter: drop-shadow(0 0 0.25rem var(--drop-shadow));;
 }
 
 .file:hover {
@@ -197,7 +211,7 @@ footer p {
   color: white;
   cursor: pointer;
   transition: 300ms;
-  filter: drop-shadow(3px 3px 3px #4444dd);
+  filter: drop-shadow(3px 3px 3px var(--drop-shadow));
 }
 
 .dialog button:hover {
@@ -206,23 +220,15 @@ footer p {
   filter: none;
 }
 
-.navBar button {
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1.5px solid black;
-  background-color: black;
-  color: white;
+#theme-btn {
+  height: 30px;
+  padding: 0;
   cursor: pointer;
   transition: 300ms;
-  filter: drop-shadow(3px 3px 3px #4444dd);
-  margin: 0 10px;
 }
 
-.navBar button:hover {
-  background-color: white;
-  color: black;
-  filter: none;
+#theme-btn:hover {
+  transform: scale(1.1);
 }
 
 .nav-list {
@@ -230,19 +236,13 @@ footer p {
   flex-direction: row;
 }
 
-:root([data-theme="dark"]) {
-  --dark-color: #000;
-  --light-color: #FFF;
-}
-
-:root([data-theme="light"]) {
-  --dark-color: #FFF;
-  --light-color: #000;
-}
-
 a {
   text-decoration: none;
-  color: rgb(85, 65, 85);
+  color: var(--text-color);
+}
+
+footer a {
+  text-decoration: underline;
 }
 
 .file-name {
