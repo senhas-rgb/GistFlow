@@ -244,3 +244,35 @@ a {
   text-decoration: none;
   color: rgb(85, 65, 85);
 }
+
+#file-name {
+  text-align: center;
+  width: 100px;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+#file-name::placeholder {
+  color: black;
+}
+
+.title-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title-edit-btn {
+  height: 15px;
+  padding: 0;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.title-edit-btn:hover {
+  transform: scale(1.2);
+}
