@@ -253,10 +253,8 @@ a {
   outline: 0;
   font-size: 23px;
   font-weight: 600;
-}
-
-.file-name::placeholder {
   color: black;
+  text-overflow: ellipsis;
 }
 
 .file-name-edit {
